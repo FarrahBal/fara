@@ -1,0 +1,867 @@
+
+/* this is the css for the whole body of the website */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: sans-serif;
+    list-style: none;
+    overflow-x: hidden;
+}
+
+
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10px;
+    background: rgb(58, 121, 236);
+    z-index: 10;
+    align-items: center;
+    width: 100%;
+    padding: 10px 100px;
+    color: white;
+}
+
+nav .logo{
+    display: flex;
+    align-items: center;
+}
+
+nav .logo h2{
+    font-size: 25px;
+    padding: 5px;
+    font-weight: 100;
+}
+
+nav .logo i{
+    margin: 0 5px;
+    font-size: 35px;
+}
+
+nav .links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+nav .links a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+
+nav .menu{
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+
+}
+
+main header{
+    background: url("images/background3.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 90vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-transform: uppercase;
+}
+
+main header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+main header .content{
+    text-align: center;
+    position: relative;
+    width: 50%;
+}
+
+main header .content h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+
+}
+
+main header .content p{
+    text-transform: none;
+    margin: 25px 0;
+}
+
+main header .content button{
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    font-size: 10px;
+    border-radius: 5px;
+    background: white;
+    color: black;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+
+
+
+
+
+.about{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    padding: 100px 200px 50px;
+    overflow: hidden;
+}
+
+.about .left{
+    flex: 1 1 400px;
+}
+
+.about .left h2{
+    font-size: 30px;
+    margin: 20px 0 30px;
+}
+
+.about .left p{
+    margin: 20px 0;
+    font-size: 12px;
+
+}
+
+.about .right{
+    flex: 1 1 400px;
+    overflow: hidden;
+}
+
+.about .right .image{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.about .right .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+/* css for products */
+.products{
+    width: 100%;
+    padding: 100px 200px 0;
+    text-align: center;
+}
+
+.products h2{
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.products > p{
+    margin: 20px 0;
+    font-size: 0 15px 10px;
+}
+
+.products .cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.products .cards .card{
+    flex: 1 1 200px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    background: #f0efef;
+}
+
+.products .cards .card .image{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    transition: .5s ease;
+    position: relative;
+}
+
+.products .cards .card .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.products .cards .card h3{
+    font-size: 15px;
+    margin: 10px;
+}
+
+.products .cards .card p{
+    font-size: 12px;
+    margin: 10px;
+    text-align: left;
+}
+
+
+
+
+
+/* contacts then  */
+.contact{
+    width: 100%;
+    padding: 100px 200px 20px;
+}
+
+.contact > h2{
+    font-size: 40px;
+    margin: 20px 0 30px;
+    text-align: center;
+}
+
+.contact .cards{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.contact .cards .card{
+    flex: 1 1 200px;
+    text-align: center;
+    padding: 20px 0;
+    border: 1px solid #808080;
+    border-radius: 5px;
+}
+
+.contact .cards .card p{
+    font-size: 12px;
+    margin: 10px;
+}
+
+.contact .cards .card .stars{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 0;
+    color: orange;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.contact .cards .card .stars i:last-child{
+    color: #808080;
+}
+
+.profile{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 20px auto 10px;
+}
+
+.profile img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.news{
+    background: rgb(58, 121, 236);
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 40px 0;
+    gap: 20px;
+}
+
+.news h2{
+    font-size: 20px;
+    margin: 10px;
+}
+
+.news p{
+    font-size: 12px;
+    margin: 10px;
+}
+
+.news .form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news .form input{
+    width: 300px;
+    padding: 10px;
+    color: white;
+    background: transparent;
+    font-size: 13px;
+    font-weight: 400;
+    outline: none;
+    margin-bottom: 10px;
+    border: 1px solid white;
+}
+
+.news .form input::placeholder{
+    color: white;
+}
+
+.news .form button{
+    padding: 10px 20px;
+    color: rgb(58, 121, 236);
+    background: white;
+    font-size: 13px;
+    font-weight: 400;
+    outline: none;
+    margin-bottom: 10px;
+    border: 1px solid white;
+}
+
+
+
+
+
+
+
+/* and then the footer  */
+
+footer{
+    width: 100%;
+    padding: 50px 200px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+footer > p{
+    font-size: 15px;
+    margin: 10px;
+    text-align: center;
+    width: 70%;
+}
+
+footer .logo{
+    display: flex;
+    align-items: center;
+}
+
+footer .logo h2{
+    font-size: 25px;
+    padding: 5px;
+    font-weight: 100;
+}
+
+footer .logo i{
+    margin: 0 5px;
+    font-size: 35px;
+    color: rgb(58, 121, 236);
+}
+
+
+footer .social{
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+
+footer .social .image{
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+}
+
+footer .social .image:nth-child(1),
+footer .social .image:nth-child(2){
+    border-radius: 50%;
+}
+
+footer .social .image:nth-child(3){
+    border-radius: 5px;
+}
+
+footer .social .image:last-child{
+    border-radius: 10px;
+    width: 40px;
+}
+
+footer .social .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer .links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+footer .links a{
+    font-size: 15px;
+    margin: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+footer hr{
+    width: 100vw;
+    height: 1px;
+    border: none;
+    background: rgb(58, 121, 236);
+}
+
+
+
+
+
+/* media screen finally */
+@media screen and (max-width: 760px){
+    .products,
+    .about,
+    .contact,
+    footer{
+        padding: 50px 20px;
+    }
+
+    nav .links{
+        display: none;
+    }
+    nav .menu{
+        display: flex;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 60%;
+    margin: 100px auto;
+    color: rgb(125, 115, 173);
+}
+
+
+.container .image{
+    width: 60%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.container .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    filter: grayscale(40%);
+}
+
+.container form{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(125, 115, 173);
+    border-radius: 10px;
+    padding: 20px;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.container form h1{
+    font-size: 22px;
+    margin: 10px;
+    font-weight: 100;
+    font-family: serif;
+}
+
+.container form label{
+    display: block;
+    margin: 10px 0;
+    font-size: 13px;
+    font-weight: 100;
+}
+
+.container form input{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid rgb(125, 115, 173);
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+}
+
+.container form input[type="submit"]{
+    background: rgb(125, 115, 173);
+    color: white;
+    cursor: pointer;
+    width: 100px;
+    margin: 0 auto;
+}
+
+.container span{
+    font-size: 12px;
+    margin: 20px;
+    display: block;
+    text-align: center;
+}
+
+.container .social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 50%;
+}
+
+
+/* some media screen for the above  */
+@media screen and (max-width: 1000px){
+    .container .image{
+        display: none;
+    }
+
+    .container{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+.dashboard{
+    display: flex;
+    width: 100vw;
+    height: 90.5vh;
+}
+
+.dashboard .sidebar{
+    width: 18%;
+    height: 100%;
+    align-items: center;
+    background: rgb(24, 72, 160);
+    color: white;
+    padding: 10px 0 20px;
+    overflow: hidden;
+    
+    h1{
+        font-size: 30px;
+        text-align: center;
+        margin-block: 0 20px;
+    }
+}
+
+
+.dashboard .sidebar ul{
+    margin: 30px auto;
+    width: 90%;
+    border-bottom: 1px solid #969595;
+}
+
+.dashboard .sidebar ul:last-child{
+    border: none;
+}
+
+
+.dashboard .sidebar ul > h3{
+    font-size: 18px;
+    margin: 20px auto;
+    width: fit-content;
+    color: #ccc;
+}
+
+
+.dashboard .sidebar ul li{
+    margin: 8px 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.dashboard .sidebar ul li:hover{
+    background: rgb(58, 121, 236);
+}
+
+.dashboard .sidebar ul li a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+
+
+.dashboard .content{
+    width: 100%;
+    height: 100%;
+    background: #f2f2f2;
+    padding: 20px;
+}
+
+.dashboard .content > h1{
+    font-size: 30px;
+    margin: 5px 0 20px 0;
+    text-align: center;
+    color: #4b4b4b;
+}
+
+.dashboard .content .stats > h3{
+    font-size: 20px;
+    margin: 10px;
+    color: #4b4b4b;
+}
+
+.dashboard .content .stats .cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.dashboard .content .stats .cards .card{
+    width: 250px;
+    height: 150px;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px 0 rgb(0, 0, 0, 0.2);
+    position: relative;
+    color: #fff;
+}
+
+.dashboard .content .stats .cards .card h3{
+    font-size: 30px;
+    margin: 0 10px 0;
+
+    span{
+        font-size: 15px;
+        margin-left: 2px;
+    }
+}
+
+.dashboard .content .stats .cards .card p{
+    font-size: 15px;
+    margin: 0 20px 0;
+}
+
+.dashboard .content .stats .cards .card p.desc{
+    font-size: 15px;
+    margin: 30px 0 0 10px;
+    color: #ecebeb;
+}
+
+.dashboard .content .stats .cards .card .fa-ellipsis-vertical{
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: 0;
+    padding: 10px;
+}
+
+
+
+.dashboard .content .activities{
+    width: 100%;
+    margin: 30px 0;
+    height: 200px;
+    overflow-y: scroll;
+}
+
+.dashboard .content .activities > h3{
+    font-size: 20px;
+    margin: 10px 0 20px 0;
+    color: #4b4b4b;
+}
+
+.dashboard .content .activities table{
+    width: 95%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+.dashboard .content .activities table tr:first-child{
+    font-weight: bold;
+}
+
+.dashboard .content .activities table tr td{
+    padding: 10px;
+}
+
+
+
+
+
+
+
+.dashboard .social{
+    display: flex;
+    gap: 30px;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.dashboard .social i{
+    font-size: 20px;
+    padding: 0 10px;
+    color: rgb(58, 121, 236);
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+.dashboard .social i:hover{
+    color: rgb(24, 72, 160);
+    transform: translateY(-10px);
+}
+
+
+@media screen and (max-width: 1040px){
+    .dashboard .sidebar{
+        display: none;
+    }
+
+    .dashboard .content .stats .cards{
+        justify-content: space-between;
+    }
+
+    .dashboard .content .stats .cards .card{
+        width: 100%;
+    }
+
+    .title{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------------------------borrow css------------------------------ */
+
+.borrow{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.borrow .borrow-form{
+    margin-block: 50px;
+    width: 500px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgb(0, 0, 0, 0.2);
+}
+
+.borrow .borrow-form h1{
+    font-size: 30px;
+    margin: 5px 0 20px 0;
+    text-align: center;
+    color: #4b4b4b;
+}
+
+.borrow .borrow-form label{
+    display: block;
+    font-size: 15px;
+    margin: 10px 0;
+    color: #4b4b4b;
+}
+
+.borrow .borrow-form input,
+.borrow .borrow-form select{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #4b4b4b;
+    border-radius: 5px;
+}
+
+.borrow .borrow-form input[type="submit"]{
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0 0;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    background: rgb(58, 121, 236);
+    color: white;
+    cursor: pointer;
+}
+
